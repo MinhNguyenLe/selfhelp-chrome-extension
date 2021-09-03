@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "description": "increase performance when learning-working",
   "icons": {
-    "16": "/images/icon.png",
-    "48": "/images/icon.png",
-    "128": "/images/icon.png"
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "action": {
-    "default_icon": "/images/icon.png",
-    "default_popup": "/action/index.html"
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
   },
   "commands": {
     "_execute_action": {
@@ -24,12 +24,12 @@
   "externally_connectable": {
     "matches": ["https://www.youtube.com/*", "https://www.facebook.com/*"]
   },
-  "permissions": ["storage", "scripting", ""],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "run_at": "document_start",
-      "js": ["/contentScript/beforeDOM.js"]
+      "js": ["beforeDOM.js"]
     }
   ]
 }
