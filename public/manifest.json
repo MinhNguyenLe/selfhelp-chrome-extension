@@ -15,10 +15,10 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "default": "Ctrl+Q",
-        "mac": "MacCtrl+Q"
+        "default": "Ctrl+A",
+        "mac": "MacCtrl+A"
       },
-      "description": "Opens /action/index.html"
+      "description": "Opens index.html"
     }
   },
   "externally_connectable": {

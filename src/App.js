@@ -2,9 +2,9 @@ import * as React from "react";
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello there!</p>
+    <div className="">
+      <header className="">
+        <p style={{ color: "black" }}>Hello there!</p>
       </header>
     </div>
   );
