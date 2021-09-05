@@ -24,12 +24,12 @@
   "externally_connectable": {
     "matches": ["https://www.youtube.com/*", "https://www.facebook.com/*"]
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "run_at": "document_start",
-      "js": ["beforeDOM.js"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ]
 }
