@@ -5,8 +5,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 const config = {
   entry: {
     popup: path.join(__dirname, "src/popup.tsx"),
-    content: path.join(__dirname, "src/content.ts"),
+    content: path.join(__dirname, "src/content-script/content.ts"),
     background: path.join(__dirname, "src/background.ts"),
+    beforeDOM: path.join(__dirname, "src/content-script/beforeDOM.ts"),
   },
   output: { path: path.join(__dirname, "dist"), filename: "[name].js" },
   module: {
@@ -18,7 +19,7 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "sass-loader"],
         exclude: /\.module\.css$/,
       },
       {
@@ -27,18 +28,8 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
-        ],
-        include: /\.module\.css$/,
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.svg$/,
