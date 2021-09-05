@@ -49,7 +49,7 @@ const config = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".tsx", ".ts"],
+    extensions: [".js", ".jsx", ".tsx", ".ts", ".json"],
   },
   devServer: {
     contentBase: "./dist",
