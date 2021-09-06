@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+// import $ from "jquery";
 
 const InputNewVocabulary = () => {
   const refNewVoc = useRef<HTMLInputElement>(null);
@@ -8,7 +9,12 @@ const InputNewVocabulary = () => {
   };
   return (
     <div className="">
-      <input type="text" ref={refNewVoc} placeholder="new vocabulary" />
+      <input
+        className="input-new-voca"
+        type="text"
+        ref={refNewVoc}
+        placeholder="new vocabulary"
+      />
       <button onClick={click}>click</button>
     </div>
   );

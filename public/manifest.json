@@ -27,8 +27,13 @@
   "permissions": ["storage", "activeTab"],
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"],
+      "matches": ["http://*.facebook.com/*", "https://*.facebook.com/*"],
+      "js": ["facebook.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["http://*.youtube.com/*", "https://*.youtube.com/*"],
+      "js": ["youtube.js"],
       "run_at": "document_idle"
     },
     {
