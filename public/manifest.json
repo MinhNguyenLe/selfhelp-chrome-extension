@@ -37,6 +37,11 @@
       "run_at": "document_idle"
     },
     {
+      "matches": ["http://*.davidwalsh.name/*", "https://*.davidwalsh.name/*"],
+      "js": ["davidwalsh.js"],
+      "run_at": "document_idle"
+    },
+    {
       "matches": ["http://*/*", "https://*/*"],
       "js": ["beforeDOM.js"],
       "run_at": "document_start"
