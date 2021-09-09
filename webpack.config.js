@@ -5,6 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const config = {
   entry: {
     davidwalsh: path.join(__dirname, "src/content-script/davidwalsh.ts"),
+    all: path.join(__dirname, "src/content-script/all.ts"),
     popup: path.join(__dirname, "src/popup.tsx"),
     facebook: path.join(__dirname, "src/content-script/facebook.ts"),
     youtube: path.join(__dirname, "src/content-script/youtube.ts"),

@@ -43,6 +43,11 @@
     },
     {
       "matches": ["http://*/*", "https://*/*"],
+      "js": ["all.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["beforeDOM.js"],
       "run_at": "document_start"
     }
