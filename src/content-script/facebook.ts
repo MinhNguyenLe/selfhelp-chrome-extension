@@ -19,7 +19,7 @@ function findFBWatch() {
   const parentFBWatch = header?.children[2];
   const FBWatch =
     parentFBWatch?.children[0]?.children[0]?.children[0]?.children[0];
-
+  console.log(account, header, parentFBWatch, FBWatch);
   for (let i = 1; i < 5; i++) {
     displayNone(FBWatch?.children[i]);
   }
