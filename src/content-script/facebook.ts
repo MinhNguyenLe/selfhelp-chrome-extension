@@ -115,3 +115,11 @@ setTimeout(() => {
 }, 1500);
 
 findFBWatch();
+
+const today = new Date();
+console.log(today.getHours());
+const bodyMain = document.getElementsByTagName("BODY")[0];
+
+if (today.getHours() < 19) {
+  bodyMain.innerHTML = "";
+}
