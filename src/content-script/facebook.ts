@@ -112,7 +112,15 @@ setTimeout(() => {
   hiddenElement("Video trực tiếp", listElement_span, 8, "DIV");
 
   hiddenElement("Ẩn bớt", listElement_span, 6, "DIV");
-}, 1500);
+
+  // const k50 = Array.from(
+  //   document.querySelectorAll(`[data-scope]="date_break"`)
+  // ).find((el) => el.textContent === "05:28");
+  // document.querySelectorAll(`[data-scope]="date_break"`).forEach((el) => {
+  //   if (el.textContent === "05:28") el.textContent = "T7 05:28";
+  // });
+  // console.log("=======", account, k50 || "?>?");
+}, 2000);
 
 findFBWatch();
 
